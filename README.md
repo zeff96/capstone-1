@@ -55,7 +55,7 @@ All the information are provided in this site.
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link]https://zeff96.github.io/Portfolio.github.io/)
+- [Live Demo Link]https://zeff96.github.io/digital-master-plan.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,7 +103,7 @@ To run the project, execute the following command:
 run the link below on your web browser.
 
 ```sh
-  https://zeff96.github.io/Portfolio.github.io/
+  https://zeff96.github.io/digital-master-plan.github.io/
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -113,7 +113,7 @@ run the link below on your web browser.
 To run this project on website run:
 
 ```sh
-  https://zeff96.github.io/Portfolio.github.io/
+  https://zeff96.github.io/digital-master-plan.github.io/
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -142,7 +142,7 @@ To run this project on website run:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/zeff96/Portfolio-setup-and-mobile-first/issues).
+Feel free to check the [issues page](https://github.com/zeff96/Capstone-1/issues).
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
