@@ -1,0 +1,124 @@
+.sub-title {
+  color: var(--clr-primary);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.time {
+  color: var(--clr-text);
+  font-size: 2rem;
+  max-width: 37rem;
+}
+
+.date {
+  font-weight: 700;
+}
+
+.program,
+#join {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR71YHggy7M0ECUWhHvj55nT-xhDMLLqypLGA&usqp=CAU");
+  padding: 2rem;
+}
+
+.program {
+  margin-bottom: -1rem;
+}
+
+.p-container {
+  background: var(--clr-text);
+  margin-bottom: 2rem;
+  height: 8rem;
+  padding: 1rem;
+}
+
+.p-title {
+  color: var(--clr-secondary);
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+.p-container > * {
+  flex-basis: 100%;
+}
+
+.i-container {
+  gap: 1rem;
+}
+
+.t-container {
+  max-width: 72rem;
+}
+
+.icon-container {
+  width: 3rem;
+  aspect-ratio: auto;
+}
+
+.p-para {
+  color: var(--clr-secondary);
+  font-size: 1.2rem;
+}
+
+.see-program {
+  color: var(--clr-secondary);
+  font-size: 1.6rem;
+  text-decoration: underline;
+  display: none;
+}
+
+.btn {
+  background-color: var(--clr-primary);
+  color: var(--clr-secondary);
+  font-size: 1.6rem;
+  padding: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+#speakers {
+  padding: 2rem;
+}
+
+.card {
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.cardinfo {
+  gap: 1.2rem;
+  max-width: 27rem;
+}
+
+.s-title {
+  margin-bottom: 4rem;
+}
+
+.bio {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .p-container {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .p-container:nth-child(4) {
+    border: 2px solid var(--clr-secondary);
+  }
+
+  .see-program {
+    display: block;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    column-gap: 3rem;
+  }
+}

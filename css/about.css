@@ -1,0 +1,92 @@
+#about {
+  background: var(--clr-secondary);
+  align-items: start;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.txt-details {
+  font-size: 1.3rem;
+  color: var(--clr-text);
+  margin: 2rem 0;
+}
+
+.address-info {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.logo-title {
+  padding: 2rem 0;
+}
+
+.logo-icon {
+  border: 2px solid var(--clr-secondary);
+  border-radius: 0.5rem;
+  padding: 3rem;
+  max-width: 32.7rem;
+  margin-bottom: 2rem;
+}
+
+.dmp-logo {
+  width: 5rem;
+  aspect-ratio: auto;
+  float: left;
+  margin-right: 0.5rem;
+}
+
+.logo-info {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.past-events {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.past-events-info {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+}
+
+.event-container {
+  max-width: 37.5rem;
+  height: 20rem;
+  position: relative;
+}
+
+.past-event-photo {
+  filter: sepia(0.8);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--clr-primary);
+  font-size: 1.3rem;
+}
+
+.centered-text {
+  font-weight: 900;
+}
+
+@media (min-width: 768px) {
+  #about {
+    background: var(--clr-secondary);
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-left: 10rem;
+    gap: 5rem;
+  }
+
+  .past-events {
+    grid-template-columns: 37.5rem 37.5rem;
+  }
+}
