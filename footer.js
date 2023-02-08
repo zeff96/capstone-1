@@ -14,7 +14,8 @@ class Footer extends HTMLElement {
           </ul>
         </div>
         <div class="d-flex footer-logo justify-content-center align-items-center">
-          <div>
+          <div class="footer-logo-icon d-flex align-items-center">
+            <img class="icon-fluid footer-icon" src="icons/Digital innovation_0.png" alt="">
             <span class="footer-tag">
               Digital Master Plan Kenya
             </span>

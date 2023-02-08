@@ -158,26 +158,28 @@ cardContainer.className = 'card-container';
 
 const speakers = Object.keys(speakersArray);
 
-speakers.forEach((speaker) => {
-  const card = document.createElement('div');
-  card.className += 'd-flex card';
-  const cardImg = document.createElement('div');
-  const cardInfo = document.createElement('div');
-  cardInfo.className = 'd-flex-column cardinfo';
-  const name = document.createElement('h2');
-  name.innerHTML = speakersArray[speaker].name;
-  const title = document.createElement('h3');
-  title.className = 'heading';
-  title.innerHTML = speakersArray[speaker].title;
-  const profilepicture = document.createElement('img');
-  profilepicture.setAttribute('src', speakersArray[speaker].profilepicture);
-  const bio = document.createElement('p');
-  bio.className = 'bio';
-  bio.innerHTML = speakersArray[speaker].bio;
-
-  cardImg.appendChild(profilepicture);
-  cardInfo.append(name, title, bio);
-  card.append(cardImg, cardInfo);
-  cardContainer.appendChild(card);
-  sec.appendChild(cardContainer);
-});
+window.onload = () => {
+  speakers.forEach((speaker) => {
+    const card = document.createElement('div');
+    card.className += 'd-flex card';
+    const cardImg = document.createElement('div');
+    const cardInfo = document.createElement('div');
+    cardInfo.className = 'd-flex-column cardinfo';
+    const name = document.createElement('h2');
+    name.className = 'name';
+    name.innerHTML = speakersArray[speaker].name;
+    const title = document.createElement('h3');
+    title.className = 'heading speaker-title';
+    title.innerHTML = speakersArray[speaker].title;
+    const profilepicture = document.createElement('img');
+    profilepicture.setAttribute('src', speakersArray[speaker].profilepicture);
+    const bio = document.createElement('p');
+    bio.className = 'bio';
+    bio.innerHTML = speakersArray[speaker].bio;
+    cardImg.appendChild(profilepicture);
+    cardInfo.append(name, title, bio);
+    card.append(cardImg, cardInfo);
+    cardContainer.appendChild(card);
+    sec.appendChild(cardContainer);
+  });
+};

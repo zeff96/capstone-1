@@ -1,8 +1,52 @@
 #about {
-  background: var(--clr-secondary);
-  align-items: start;
+  background: linear-gradient(to bottom, rgba(212, 212, 212, 0.961), rgba(212, 212, 212, 0.995)), url("https://www.kenyanews.go.ke/wp-content/uploads/2021/12/IMG20211217141613-510x369.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   justify-content: center;
   padding-top: 2rem;
+}
+
+.sub-title {
+  text-align: center;
+  color: var(--clr-primary);
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.about-title {
+  color: var(--clr-primary);
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 5rem;
+  letter-spacing: 0.1rem;
+  max-width: 60rem;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.about-title::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 30px;
+  height: 10px;
+  border-bottom: 2px solid #ec5342a2;
+}
+
+.para {
+  color: var(--clr-text);
+  font-size: 1.6rem;
+  max-width: 72rem;
+  background: #fff8;
+  border: 2px solid var(--clr-secondary);
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
 }
 
 .txt-details {
@@ -16,15 +60,36 @@
   text-decoration: underline;
 }
 
+.logo-section {
+  padding: 4rem;
+  border-bottom: 2px solid var(--clr-secondary);
+}
+
 .logo-title {
+  text-align: center;
   padding: 2rem 0;
+  position: relative;
+}
+
+.logo-title::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 30px;
+  height: 10px;
+  border-bottom: 2px solid #ec5342a0;
+}
+
+.logo-text-info {
+  max-width: 60rem;
 }
 
 .logo-icon {
   border: 2px solid var(--clr-secondary);
   border-radius: 0.5rem;
-  padding: 3rem;
-  max-width: 32.7rem;
+  padding: 3rem 8rem;
   margin-bottom: 2rem;
 }
 
@@ -40,12 +105,33 @@
   font-weight: 700;
 }
 
+.past-events-section {
+  padding: 4rem;
+}
+
 .past-events {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
   width: 100%;
   margin: 0 auto;
+  color: var(--clr-secondary);
+}
+
+.past-event-header {
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.past-event-header::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 30px;
+  height: 10px;
+  border-bottom: 2px solid #ec5342a0;
 }
 
 .past-events-info {
@@ -54,31 +140,29 @@
 }
 
 .event-container {
+  background: linear-gradient(to bottom, #ec53429f, #ec5342eb), url('https://capria.vc/wp-content/uploads/2022/04/kenya-economic-update-accelerating-kenyas-digital-economy-780x439-1.jpeg');
   max-width: 37.5rem;
   height: 20rem;
-  position: relative;
 }
 
-.past-event-photo {
-  filter: sepia(0.8);
+.event-container-1 {
+  background: linear-gradient(to bottom, #ec53429f, #ec5342eb), url("https://media.istockphoto.com/id/1402667894/photo/energy-lecture-screen.jpg?b=1&s=170667a&w=0&k=20&c=4IN-1IUvtrMK3h8fnrWf490o5KzoXfDFd6gL3Rbn5Ak=");
+  max-width: 37.5rem;
+  height: 20rem;
 }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--clr-primary);
-  font-size: 1.3rem;
-}
-
-.centered-text {
+.past-event-year {
+  font-size: 2rem;
   font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.past-event-venue {
+  font-size: 1.6rem;
 }
 
 @media (min-width: 768px) {
   #about {
-    background: var(--clr-secondary);
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -86,7 +170,25 @@
     gap: 5rem;
   }
 
+  .sub-title {
+    display: none;
+  }
+
   .past-events {
     grid-template-columns: 37.5rem 37.5rem;
+  }
+
+  .footer {
+    margin-top: 4rem;
+  }
+
+  .footer-items-container {
+    display: none;
+  }
+
+  .footer-logo {
+    background: var(--clr-text);
+    color: var(--clr-secondary);
+    padding: 5rem;
   }
 }

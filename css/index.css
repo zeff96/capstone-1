@@ -1,16 +1,50 @@
+.home-page {
+  background: linear-gradient(to bottom, rgba(212, 212, 212, 0.931), rgb(212, 212, 212)), url("https://www.kenyanews.go.ke/wp-content/uploads/2021/12/IMG20211217141613-510x369.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  color: var(--clr-primary);
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 5rem;
+  letter-spacing: 0.1rem;
+  max-width: 60rem;
+  margin-bottom: 4rem;
+}
+
+.home-page-child {
+  padding: 3rem 0;
+}
+
+.home-para {
+  color: var(--clr-text);
+  font-size: 1.6rem;
+  max-width: 60rem;
+  border: 2px solid #fff;
+  margin-bottom: 4rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
 .sub-title {
   color: var(--clr-primary);
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: 400;
   margin-bottom: 0.5rem;
 }
 
 .time {
   color: var(--clr-text);
   font-size: 2rem;
-  max-width: 37rem;
+  max-width: 60rem;
 }
 
 .date {
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
   font-weight: 700;
 }
 
@@ -34,7 +68,20 @@
 .p-title {
   color: var(--clr-secondary);
   font-size: 2rem;
-  padding: 3rem;
+  padding-bottom: 1rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.p-title::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 50px;
+  height: 10px;
+  border-bottom: 1.7px solid #ec5342be;
 }
 
 .p-container > * {
@@ -46,7 +93,7 @@
 }
 
 .t-container {
-  max-width: 72rem;
+  max-width: 60rem;
 }
 
 .icon-container {
@@ -62,6 +109,7 @@
 .see-program {
   color: var(--clr-secondary);
   font-size: 1.6rem;
+  text-transform: uppercase;
   text-decoration: underline;
   display: none;
 }
@@ -77,6 +125,7 @@
 
 #speakers {
   padding: 2rem;
+  background: var(--clr-secondary);
 }
 
 .card {
@@ -89,8 +138,42 @@
   max-width: 27rem;
 }
 
-.s-title {
+.speaker-header {
   margin-bottom: 4rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.speaker-header::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 50px;
+  height: 10px;
+  border-bottom: 1.7px solid #ec5342be;
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.speaker-title {
+  padding-bottom: 1rem;
+  font-style: italic;
+  position: relative;
+}
+
+.speaker-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 2px;
+  border-bottom: 0.5px solid #27293068;
 }
 
 .bio {
@@ -105,6 +188,10 @@
 
   .p-container:nth-child(4) {
     border: 2px solid var(--clr-secondary);
+  }
+
+  .t-container {
+    text-align: center;
   }
 
   .see-program {

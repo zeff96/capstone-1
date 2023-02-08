@@ -1,5 +1,5 @@
 :root {
-  --clr-text: #272a31;
+  --clr-text: #272930;
   --clr-primary: #ec5242;
   --clr-secondary: #d3d3d3;
 }
@@ -189,38 +189,8 @@ body {
   display: none;
 }
 
-.home-page {
-  background-color: var(--clr-secondary);
-}
-
-.home-page-child {
-  padding: 3rem 0;
-}
-
 .pop-icons {
   display: inline;
-}
-
-.title {
-  color: var(--clr-primary);
-  font-size: 3.5rem;
-  text-transform: capitalize;
-  font-weight: 700;
-  line-height: 3.5rem;
-  letter-spacing: 0.1rem;
-  max-width: 37rem;
-  margin-bottom: 2rem;
-}
-
-.para {
-  color: var(--clr-text);
-  font-size: 1.6rem;
-  max-width: 72rem;
-  background: #fff;
-  border: 2px solid var(--clr-secondary);
-  margin-bottom: 2rem;
-  padding: 2rem;
-  border-radius: 0.5rem;
 }
 
 .logo-text-info {
@@ -228,19 +198,34 @@ body {
 }
 
 .footer {
-  padding: 4rem 0;
+  margin-top: -4rem;
+  padding-top: 4rem;
 }
 
 .footer-items-container {
-  background-color: var(--clr-text);
+  background-color: #272a31e3;
   gap: 2rem;
-  padding: 2rem;
+  padding: 5rem;
 }
 
 .footer-header {
   color: var(--clr-secondary);
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
   text-transform: capitalize;
+  position: relative;
+}
+
+.footer-header::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 30px;
+  height: 10px;
+  border-bottom: 1.7px solid #ec5342be;
 }
 
 .footer-list {
@@ -255,7 +240,17 @@ body {
 .footer-logo {
   font-size: 1.5rem;
   gap: 2rem;
-  padding: 2rem;
+  padding: 3.5rem;
+  background: var(--clr-secondary);
+}
+
+.footer-logo-icon {
+  aspect-ratio: auto;
+}
+
+.footer-icon {
+  width: 5rem;
+  aspect-ratio: auto;
 }
 
 .footer-tag {
@@ -299,9 +294,10 @@ body {
   }
 
   .links {
-    background: var(--clr-text);
+    height: 3rem;
+    background: #272930df;
     justify-content: end;
-    padding: 0 3rem;
+    padding: 0 15rem;
   }
 
   .social-link {
@@ -315,7 +311,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3rem;
+    padding: 0 15rem;
   }
 
   .close-icon {
@@ -368,5 +364,9 @@ body {
 
   .scrollspy {
     color: var(--clr-primary);
+  }
+
+  .footer-logo {
+    padding: 5rem;
   }
 }
