@@ -1,82 +1,71 @@
 class Menu extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-        <header class="head-header container">
-          <div class="menu">
-            <i class="fa-solid fa-bars"></i>
+      <header class="fixed-top">
+        <div class="social navbar navbar-expand-md bg-dark">
+          <div class="container">
+            <ul class="navbar-nav ms-auto gap-3">
+              <li><a href="#"><i class="fa-brands fa-facebook text-white text-decoration-none"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter text-white text-decoration-none"></i></a></li>
+              <li><a class="text-white text-decoration-none" href="">english</a></li>
+              <li><a class="text-white text-decoration-none"  href="">mypage</a></li>
+              <li><a class="text-white text-decoration-none"  href="">logout</a></li>
+            </ul>
           </div>
-          <nav class="nav d-active d-none">
-            <div class="links d-flex">
-              <ul class="links-items d-flex align-items-center">
-                <li><a href="#"><i class="fa-brands fa-facebook social-link"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter social-link"></i></a></li>
-                <li><a class="social-link" href="">english</a></li>
-                <li><a class="social-link"  href="">mypage</a></li>
-                <li><a class="social-link"  href="">logout</a></li>
-              </ul>
-            </div>
-            <div class="navbar d-flex-column align-items-start">
-              <div class="close-icon">
-                <i class="fa-solid fa-xmark"></i>
-              </div>
-              <div class="logo d-flex align-items-center">
-                <a class="home-icon" href="index.html">
-                  <img class="icon-fluid" src="icons/Digital innovation_0.png" alt="">
-                </a>
-                <p class="home-icon-info">Digital Master Plan 2023</P>
-                <a class="home-page-icon" href="index.html">
-                  <i class="fa-solid fa-house"></i>
-                  Home
-                </a>
-              </div>
-              <ul class="nav-items d-flex-column">
-                <li class="nav-list-items">
-                  <a href="about.html" class="nav-links">
-                    <div class="pop-icons">
-                      <i class="fa-solid fa-circle-info"></i>
-                    </div>
-                    about
+        </div>
+        <nav class="navbar navbar-expand-md bg-white text-dark">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+              <img class="logo" src="icons/Digital innovation_0.png" alt="header-icon">
+              Master Plan 2023
+            </a>
+            <button class="navbar-toggler"
+            type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a href="about.html" class="nav-link">
+                    About
                   </a>
                 </li>
-                <li class="nav-list-items">
-                  <a href="programs.html" class="nav-links">
-                    <div class="pop-icons">
-                      <i class="fa-regular fa-calendar"></i>
-                    </div>
-                    programs
+                <li class="nav-item">
+                  <a href="programs.html" class="nav-link">
+                    Programs
                   </a>
                 </li>
-                <li class="nav-list-items">
-                  <a href="join.html" class="nav-links">
-                    <div class="pop-icons">
-                      <i class="fa-solid fa-users"></i>
-                    </div>
-                    join
+                <li class="nav-item">
+                  <a href="join.html" class="nav-link">
+                    Join
                   </a>
                 </li>
-                <li class="nav-list-items">
-                  <a href="sponsor" class="nav-links">
-                    <div class="pop-icons">
-                      <i class="fa-solid fa-circle-dollar-to-slot"></i>
-                    </div>
-                    sponsor
+                <li class="nav-item">
+                  <a href="sponsor" class="nav-link">
+                    Sponsor
                   </a>
                 </li>
-                <li class="nav-list-items">
-                  <a href="news.html" class="nav-links">
-                    <div class="pop-icons">
-                      <i class="fa-solid fa-newspaper home"></i>
-                    </div>
-                    news
+                <li class="nav-item">
+                  <a href="news.html" class="nav-link">
+                    News
                   </a>
                 </li>
-                <li class="nav-list-items">
-                  <a href="campaign.html" class="nav-links campaign">DMP campaign</a>
+                <li class="nav-item">
+                  <a href="campaign.html" class="nav-link border border-danger" style="color: #ec5242">
+                    DMP Campaign
+                  </a>
                 </li>
               </ul>
             </div>
-          </nav>
-        </header>
+          </div>
+        </nav>
+      </header>
     `;
   }
 }
+
+customElements.define("my-nav", Menu);

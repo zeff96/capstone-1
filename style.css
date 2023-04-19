@@ -1,0 +1,41 @@
+body {
+  font-family: Lato, sans-serif;
+  background-color: #d3d3d3;
+}
+
+.logo {
+  width: 3rem;
+}
+
+#home_page {
+  background: linear-gradient(
+      to bottom,
+      rgba(212, 212, 212, 0.931),
+      rgb(212, 212, 212)
+    ),
+    url("https://www.kenyanews.go.ke/wp-content/uploads/2021/12/IMG20211217141613-510x369.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#program {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR71YHggy7M0ECUWhHvj55nT-xhDMLLqypLGA&usqp=CAU");
+}
+
+.event {
+  background: linear-gradient(to bottom, #ec53429f, #ec5342eb),
+    url("https://capria.vc/wp-content/uploads/2022/04/kenya-economic-update-accelerating-kenyas-digital-economy-780x439-1.jpeg");
+  height: 12rem;
+}
+
+@media (max-width: 576px) {
+  .social {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  #home_page {
+    height: 100vh;
+  }
+}
