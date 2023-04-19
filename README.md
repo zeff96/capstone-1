@@ -20,9 +20,7 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-
 # 📖 DIGITAL MASTER PLAN 2023 <a name="about-project"></a>
-
 
 **DIGITAL MASTER PLAN 2023** is a website i have created for the purpose of marketing and knownledge sharing to our partners and clients who wish to attend Digital Master Plan 2023 summit.<br>
 All the information are provided in this site.
@@ -30,7 +28,6 @@ All the information are provided in this site.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
 
 <details>
   <summary>Client</summary>
@@ -41,9 +38,7 @@ All the information are provided in this site.
   </ul>
 </details>
 
-
 ### Key Features <a name="key-features"></a>
-
 
 - **About the summit**
 - **Program and ticket information**
@@ -51,25 +46,19 @@ All the information are provided in this site.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-
-- [Live Demo Link]https://zeff96.github.io/digital-master-plan.github.io/)
+- [Live Demo Link](https://zeff96.github.io/capstone-1/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 💻 Getting Started <a name="getting-started"></a>
-
-
 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
-
 
 ```sh
  Vs code
@@ -80,7 +69,6 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-
 ```sh
   cd my-folder
   git git@github.com:zeff96/Capstone-1.git
@@ -89,7 +77,6 @@ Clone this repository to your desired folder:
 ### Install
 
 Install this project with:
-
 
 ```sh
   cd my-project
@@ -128,15 +115,12 @@ To run this project on website run:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 🔭 Future Features <a name="future-features"></a>
-
 
 - [ ] **Enable user login and authetication**
 - [ ] **All devices screen size display**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -144,18 +128,13 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/zeff96/Capstone-1/issues).
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## ⭐️ Show your support <a name="support"></a>
 
-
 If you like this project you are free to propose changes that you think might be made to even make it better in the future
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
@@ -163,13 +142,10 @@ I would like to thank My learning partners, Microverse community as whole for he
 
 I would also like to give credit to Cindy Shin who is the original designer of the project.
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](LICENSE.md) licensed.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
